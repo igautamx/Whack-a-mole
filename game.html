@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="game.css"> 
+        <link rel = "icon" type = "image/png" href = "mole.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+         <script src="game.js"> </script>
+        <title>Game</title>
+        </head>
+        <body>
+            <div>
+             <div class="name"><h1>Whack A Mole by Gautam<span id="myScore"></span> </div>
+            <div class="stage">
+             <div  id="stage">Stage = 1</div>
+            </div>
+            <div class="total">
+            <div  id="total">Total = 0</div>
+            </div>
+
+
+
+            </div>
+                <div class="game" onClick="CheckAction(1)"><img id = "hole-1"  src="img/hole.png" width="80" height="80"></div>
+                <div class="game2" onClick="CheckAction(2)"><img id = "hole-2" src="img/hole.png" width="80" height="80"></div>
+                <div class="game3" onClick="CheckAction(3)"><img id = "hole-3" src="img/hole.png" width="80" height="80"></div>
+                <div class="game4" onClick="CheckAction(4)"><img id = "hole-4" src="img/hole.png" width="80" height="80"></div>
+                <div class="game5" onClick="CheckAction(5)"><img id = "hole-5" src="img/hole.png" width="80" height="80"></div>
+                <div class="game6" onClick="CheckAction(6)"><img id = "hole-6" src="img/hole.png" width="80" height="80"></div>
+                <div class="game7" onClick="CheckAction(7)"><img id = "hole-7" src="img/hole.png" width="80" height="80"></div>
+                <div class="game8" onClick="CheckAction(8)"><img id = "hole-8"src="img/hole.png" width="80" height="80"></div>
+                <div class="game9" onClick="CheckAction(9)"><img id = "hole-9" src="img/hole.png" width="80" height="80"></div>
+             <div class="gamescore" id="popup" >
+              <div onclick="increaseScore()" id="mole">
+                <img onclick="startTheGame();PopUp();game()"class="moleimg" src="img/mole.png" width="180" height="180"></div>
+                <div onclick="checkIfWonOrLost()" id="bomb">
+              <div class="playgame"> Click on mole to play</div>
+              <button class="button-49" onclick="EndTheGame()">End</button>
+              </div>
+            </div>
+            
+
+              
+        </body>
+</html>
